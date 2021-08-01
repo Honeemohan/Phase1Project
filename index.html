@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply Blogging</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="addblog.js"></script>
+</head>
+
+<body>
+
+    <h1 class="h1header">Cats Who Code</h1>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Add Blog</a></li>
+                <li><a href="aboutus.html">AboutUs</a></li>
+                <li><a href="contact.html" class="contact">Contact</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div id="addblog" style="margin-left: 10px;">
+        <h3 style="background-color: burlywood; padding-left: 10px;">Add Blog</h3>
+        <label class="titlelable">Title:</label> <input type="text" size="48" id="title"
+            placeholder="Blog Title" /><br />
+        <p class="titledesc">
+            <label>Description:</label> <textarea id="desc" rows="4" cols="50"
+                placeholder="Describe your blog content"></textarea> <br />
+        </p>
+        <label class="imgurl">Image URL:</label> <input type="text" size="47" id="imgUrl"
+            placeholder="Url of the image" /><br />
+        <input type="button" value="Add" onclick="addData()" class="addbtn" />
+        <hr />
+        <div id="main" class="gridtype">
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
